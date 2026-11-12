@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+</head>
+<body>
+    <h1>Clientes</h1>
+
+    <form th:action="@{/clientes}" method="post">
+        <input type="text" name="nome" placeholder="Nome do cliente" required>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+
+        <tr th:each="cliente : ${clientes}">
+            <td th:text="${cliente.id}"></td>
+
+            <td>
+                <form th:action="@{/clientes/{id}(id=${cliente.id})}" method="post">
+                    <input type="text" name="nome" th:value="${cliente.nome}" required>
+                    <button type="submit">Alterar</button>
+                </form>
+            </td>
+
+            <td>
+                <form th:action="@{/clientes/{id}/excluir(id=${cliente.id})}" method="post">
+                    <button type="submit">Excluir</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
