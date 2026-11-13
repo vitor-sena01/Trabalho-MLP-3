@@ -62,4 +62,3 @@ projeto/
 ## Autores
 
 Equipe Henrique Langa| John Wesley| Vitor Sena | Turma SIN05NA/SIN06NA | Multivix Vitória - 2026/2 |  Professora: Juliana Rodrigues de Lima Meirelles.
-
