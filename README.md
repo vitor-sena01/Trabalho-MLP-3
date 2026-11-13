@@ -17,9 +17,9 @@ Explique em um ou dois parágrafos:
 
 | Integrante | Parte desenvolvida | O que fez |
 | --- | --- | --- |
-| Henrique Langa | Ex.: dados (entidade e repositório) | Resumo em uma frase |
-| Jhon Wesley | Ex.: interface | Resumo em uma frase |
-| Vitor Sena | Ex.: padrões de projeto | Resumo em uma frase |
+| Henrique Langa | Ex.: Padroes de projeto e boas práticas | Uso das Regras Obrigatorias do projeto |
+| Jhon Wesley | Ex.: interface | Interface web para a manipulação dos dados |
+| Vitor Sena | Ex.: Dados - Parte inicial| Aplicação do JPA e MySQL no projeto |
 
 
 ## Temas do bimestre
