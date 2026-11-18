@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>Clientes</h1>
+    <p th:if="${erro}" th:text="${erro}" style="color: red;"></p>
 
     <form th:action="@{/clientes}" method="post">
         <input type="text" name="nome" placeholder="Nome do cliente" required>
