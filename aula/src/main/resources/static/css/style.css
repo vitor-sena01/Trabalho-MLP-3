@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap');
+
+:root{
+    --fundo:#f4f6f8;
+    --texto: #222222;
+    --titulo: #2c3e50;
+    --destaque: #2c7be5;
+    --destaque-escuro: #1a5fc0;
+    --perigo: #d64545;
+    --perigo-escuro: #b83232;
+    --borda: #d5dbe1;
+    --linha-par: #eef2f6;
+}
+
+body{
+    font-family: 'Instrument Sans', sans-serif;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 16px;
+    background: var(--fundo);
+    color: var(--texto);
+}
+
+h1 {color: var(--titulo);}
+
+input[type="text"]{
+    padding: 8px 10px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+}
+
+button{
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: var(--destaque);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--destaque-escuro);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 16px;
+}
+
+th{
+    background: var(--titulo);
+    color: white;
+    text-align: left;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid var(--borda);
+}
+tr:nth-child(even){
+    background: var(--linha-par);
+}
+form[action$="/excluir"] button{
+    background: var(--perigo);
+}
+form[action$="/excluir"] button:hover{
+    background: var(--perigo-escuro);
+}
